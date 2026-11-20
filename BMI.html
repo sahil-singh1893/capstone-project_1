@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eaf2f8;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 400px;
+            margin: 80px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2471a3;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: cadetblue;
+        }
+
+        .result {
+            background-color: #c3d2dd;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: #2471a3;">BMI Calculator</h2>
+        <p style="color: gray;">Calculate your Body Mass Index</p><br><hr><br>
+
+        <form style="text-align: left;">
+            <lable style="font-weight: bold;">Enter Your Weight (kg):</lable>
+            <input type="number" placeholder="e.g 70 " required><br><br>
+
+            <lable style="font-weight: bold;">Enter Your Height (cm):</lable>
+            <input type="number" placeholder="e.g 170 " required>
+
+            <div style="text-align: center;">
+                <button type="button">Calculate BMI</button>
+                <button style="background-color: #41494c;" type="reset">Clear</button>
+            </div>
+
+        </form>
+
+        <div class="result">
+            <h3>Your BMI : --</h3>
+            <p>BMI Result will appear here</p>
+        </div><br><hr>
+        <footer style="color: gray; font-size: 13px; margin-top: 20px">Healthy Body | Healthy Life</footer>
+    </div>
+</body>
+
+</html>
